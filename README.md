@@ -7,7 +7,7 @@ O sistema é um simples CRUD. Onde temos o cadastro de carros (POST), a leitura 
 
 Como testar o projeto?
 Parte 1: Baixando a parte do front-end!
-1. Clone essa parte do projeto, que é a parte do front, a api irei disponiblizar no meu próximo repositório!;
+1. Clone essa parte do projeto, que é a parte do front, a API irei disponiblizar no meu próximo repositório!;
 2. Dentro da pasta do projeto baixe todas as dependências, através de " npm install ";
 3. Depois rode o comando " npm run dev";
 4. Depois disso você verá a parte do front-end;
