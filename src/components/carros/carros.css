@@ -1,0 +1,39 @@
+#carros {
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1000px;
+}
+#des_cars {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+}
+#des_cars > h1 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#des_cars > p {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 18px;
+}
+#carros_cadastrados {
+    background-color: #f6f6f6;
+    width: 1050px;
+    margin-top: 50px;
+    height: auto;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    align-items: center;
+    margin-bottom: 50px;
+}

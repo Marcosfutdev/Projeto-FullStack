@@ -1,0 +1,54 @@
+.car{
+    background-color: #cfcbcb;
+    align-items: flex-start;
+    width: 900px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+}
+
+.car > .image_car {
+    height: 170px;
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+#content_car {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-left: 15px;
+}
+#content_car > .cor, #content_car > .preco, #content_car > 
+.ano, #content_car > .vendido, #content_car > .negociacao  {
+    font-weight: bold;
+} 
+
+.car > .buttons {
+   margin-left: 300px;
+   display: flex;
+   flex-direction: column;
+   gap:13px;
+}
+.car > .buttons > #alterar {
+    background-color: rgb(28, 11, 219);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.car > .buttons > #deletar {
+    background-color: red;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
