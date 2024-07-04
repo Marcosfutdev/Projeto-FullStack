@@ -25,3 +25,5 @@ Parte 2: Baixando a parte do back-end!
 Com isso, você poderá testar tranquilamente esse sistema, lembre-se de rodar o front-end e o back-end ao mesmo tempo, para não ter problema dos dados não serem buscados pela API!
 "npm run dev" na pasta do front-end;
 "npm run start:dev" na pasta do back-end;
+
+Dependendo da porta que seu front-end estiver rodando, configure o cors do servidor express para a origem da sua URL, se não o navegador vai apresentar um erro de CORS. Por isso na API tem o CORS definido para qual URL deve se conectar a API com o front.
