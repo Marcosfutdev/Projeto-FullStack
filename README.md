@@ -19,7 +19,7 @@ Parte 2: Baixando a parte do back-end!
    você deve criar um banco de dados como ele solicita lá,
    um simples, grátis, você só terá que lembrar do seu usuário e senha para se conectar com a API. Através do link que ele disponibilizar, você vai no arquivo da API "connectt.js" que está dentro da pasta src/database, lá você deve colocar esse link no lugar
    do meu que está lá,
-   modificando só a parte onde tem "<password>", você deve apagar apenas "(<password>")" e colocar sua senha, a qual você criou para se conectar com o banco de dados, verifique se também está o nome do seu usuário do banco.
+   modificando só a parte onde tem "<password>", você deve apagar apenas "("<password>)" e colocar sua senha, a qual você criou para se conectar com o banco de dados, verifique se também está o nome do seu usuário do banco.
 4. Dentro da pasta, você deve rodar o servidor, através do comando "npm run start:dev", se você já tiver algo rodando na porta 3030, mude a porta, se não, tudo ok!
 
 Com isso, você poderá testar tranquilamente esse sistema, lembre-se de rodar o front-end e o back-end ao mesmo tempo, para não ter problema dos dados não serem buscados pela API!
