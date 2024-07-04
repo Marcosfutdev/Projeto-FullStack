@@ -15,7 +15,7 @@ Parte 1: Baixando a parte do front-end!
 Parte 2: Baixando a parte do back-end!
 1. Clone o meu próximo repositório que terá o nome de "API sistema de carros";
 2. Dentro da pasta do projeto baixe todas as dependências, através de "npm install";
-3. Para você conseguir cadastrar dados, modificar e deletar, você terá que criar um banco de dados em MongoDB, através do site do MongoDB, só você digitar mongoDB, você deve criar uma conta se você não tiver. Depois de criar umca conta,
+3. Para você conseguir cadastrar dados, modificar e deletar, você terá que criar um banco de dados em MongoDB, através do site do MongoDB, só você digitar mongoDB, você deve criar uma conta se você não tiver. Depois de criar uma conta,
    você deve criar um banco de dados como ele solicita lá,
    um simples, grátis, você só terá que lembrar do seu usuário e senha para se conectar com a API. Através do link que ele disponibilizar, você vai no arquivo da API "connectt.js" que está dentro da pasta src/database, lá você deve colocar esse link no lugar
    do meu que está lá,
