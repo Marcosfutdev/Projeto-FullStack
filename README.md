@@ -15,15 +15,14 @@ Parte 1: Baixando a parte do front-end!
 Parte 2: Baixando a parte do back-end!
 1. Clone o meu próximo repositório que terá o nome de "API sistema de carros";
 2. Dentro da pasta do projeto baixe todas as dependências, através de "npm install";
-3. Para você conseguir cadastrar dados, modificar e deletar, você terá que criar um banco de dados em MongoDB, através do site do MongoDB, só você digitar mongoDB, você deve criar uma conta se você não tiver. Depois de criar uma conta,
-   você deve criar um banco de dados como ele solicita lá,
-   um simples, grátis, você só terá que lembrar do seu usuário e senha para se conectar com a API. Através do link que ele disponibilizar, você vai no arquivo da API "connectt.js" que está dentro da pasta src/database, lá você deve colocar esse link no lugar
-   do meu que está lá,
-   modificando só a parte onde tem <> e dentro tem password (não posso escrever maior e menor com a palavra dentro, o README esconde), você deve apagar apenas <> onde dentro tem a palvra passoword e colocar sua senha, a qual você criou para se conectar com o banco de dados, verifique se também está o nome do seu usuário do banco.
-4. Dentro da pasta, você deve rodar o servidor, através do comando "npm run start:dev", se você já tiver algo rodando na porta 3030, mude a porta, se não, tudo ok!
+3. Ainda dentro da pasta "api", vá no arquivo "express.js", dentro de app.use(cors({origin:'coloque a URL em que seu clone do front-end está sendo executado, o localhost e a porta'})); Essa parte é para o back-end se conectar com o front-end. Porque o CORS é basicamente um protocolo que não permite uma URL diferente se conectar com outra URL, por exemplo, O front-end está sendo executado em uma porta e o back-end em outra. O CORS não permite! Por isso na parte citada anterior, verifique a porta em que o front-end está sendo executado, e coloque dentro daquele techo de código que eu cite. Para a API se conectar corretamente com o front-end. Exemplo: 'http://localhost:5000'
+4. Crie um banco de dados grátis através do site do MONGODB, onde lá ele vai pedir para você criar um usuário e senha para o conectar com o seu banco. Não esqueça esses dados! Pois com eles vamos se conectar ao seu banco! -Para conectar a API com o banco de dados, vá em src/database, dentro do arquivo "connect.js", no trecho do código "await mongoose.connect("coloque a o trecho que o MONGODB disponibiliza para você se conectar com o banco!"); Exemplo: "mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@users.560rfik.mongodb.net/?retryWrites=true&w=majority&appName=users"; Coloque o seu e coloque as variáveis de ambiente como está aí no exemplo! Se baseie neste exemplo! Apenas na parte das váriaveis de ambiente!
+5. Dentro da raiz da pasta "api" você vai criar um arquivo chamado ".env", onde dentro dele você vai criar variáveis de ambiente, chamadas: MONGODB_USER=nome do seu usuário do banco MONGODB_PASSWORD=sua senha do banco Dessa mesma forma que está, só coloque seu usuário e senha.
+6. Agora por fim, na raiz da pasta da api execute o comando "npm run start:dev".
 
 Com isso, você poderá testar tranquilamente esse sistema, lembre-se de rodar o front-end e o back-end ao mesmo tempo, para não ter problema dos dados não serem buscados pela API!
 "npm run dev" na pasta do front-end;
 "npm run start:dev" na pasta do back-end;
+
 
 Dependendo da porta que seu front-end estiver rodando, configure o cors do servidor express para a origem da sua URL, se não o navegador vai apresentar um erro de CORS. Por isso na API tem o CORS definido para qual URL deve se conectar a API com o front.
